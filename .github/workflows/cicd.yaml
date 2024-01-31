@@ -35,4 +35,4 @@ jobs:
       - run: terraform -chdir=./infra init
       - run: terraform -chdir=./infra validate
       - run: terraform -chdir=./infra apply -auto-approve
-      - run: aws s3 sync --region eu-central-1 ./build s3://DEIN_BUCKET_NAME/ --profile student
+      - run: aws s3 sync --region eu-central-1 ./build s3://jenkins-bucket-levent-28-01/ --profile student
